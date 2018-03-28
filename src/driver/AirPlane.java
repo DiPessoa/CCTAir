@@ -1,7 +1,7 @@
 package driver;
 
 /**
- * Class for object of Airplane type, where is possible find all variables anf
+ * Class of an Airplane object where is possible find all variables and
  * methods about airplane
  *
  * @author Diogo Pessoa
@@ -22,7 +22,7 @@ public class AirPlane {
      * @param make String - What brand it is
      * @param model String - Name of the model
      * @param category String - Says what kind of airplane is
-     * @param capacity Interger - Number of seats
+     * @param capacity Integer - Number of seats
      */
     public AirPlane(String make, String model, String category, int capacity) {
         this.make = make;
@@ -32,7 +32,7 @@ public class AirPlane {
     }
 
     /**
-     * Method that returns AirPlane's make
+     * Method returns AirPlane's make
      *
      * @return String make
      */
@@ -41,7 +41,7 @@ public class AirPlane {
     }
 
     /**
-     * Method that returns AirPlane's model
+     * Method returns AirPlane's model
      *
      * @return String model
      */
@@ -50,7 +50,7 @@ public class AirPlane {
     }
 
     /**
-     * Method that returns AirPlane's seats
+     * Method returns AirPlane's seats
      *
      * @return Integer capacity
      */
@@ -59,7 +59,7 @@ public class AirPlane {
     }
 
     /**
-     * Method that returns the Pilot assign to a airplane
+     * Method returns the Pilot assign to an airplane
      *
      * @return Pilot pilot
      */
@@ -68,7 +68,7 @@ public class AirPlane {
     }
 
     /**
-     * Method that returns the Category
+     * Method returns the Category
      *
      * @return String Category
      */
@@ -77,21 +77,23 @@ public class AirPlane {
     }
 
     /**
-     * Method that sets capacity
-     * Where: category type A = Airplane seats &< 50
-     * category type B = Airplane 50 > seats <= 150
-     * category type C = Airplane 150 > seats <= 300
-     * category type D = Airplane seats > 300 category type E = Cargo Airplane
-     *
+     * Method sets capacity
      *
      * @param capacity integer
+     */
+    /*Capacity categories: 
+     * category type A = Airplane seats <= 50;
+     * category type B = Airplane 50 > seats <=150;
+     * category type C = Airplane 150 > seats <= 300;
+     * category type D = Airplane seats > 300 
+     * category type E = Cargo Airplane;
      */
     public void setCapacity(int capacity) {
         this.capacity = capacity;
     }
 
     /**
-     * Method that sets category
+     * Method sets category
      *
      * @param category String
      */
@@ -100,11 +102,11 @@ public class AirPlane {
     }
 
     /**
-     * Method that assing a Pilot to a airplane
+     * Method assigns a Pilot to an airplane
      *
      * @param pilot Pilot
      */
-    public void assingPilot(Pilot pilot) {
+    public void assignPilot(Pilot pilot) {
 
         if (pilot.getRating() == 1 && category.equals("E")) {
             this.pilot = pilot;
@@ -122,7 +124,7 @@ public class AirPlane {
     }
 
     /**
-     * Method that returns a Strinf of object
+     * Method returns a String of an object
      *
      * @return String output
      */

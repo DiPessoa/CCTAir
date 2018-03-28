@@ -1,7 +1,7 @@
 /**
  * Created on 28th of March of 2018
  * for a Assignment Project
- * Module Object Oriented Contructs
+ * Module Object Oriented Constructs
  */
 /**
  * @author Diogo Pessoa 2016326
@@ -11,17 +11,19 @@
 package driver;
 
 /**
+ * Main Class
+ *
  * @version 1.0
  */
 public class CCTAir {
 
     /**
-     * Main method was created to hold all intances and call methods args
+     * Main method was created to hold all instances and call methods args
      */
     public static void main(String[] args) {
 
         /**
-         * Creating new instaces of object Pilot
+         * Creating new instances of object Pilot
          */
         Pilot p1 = new Pilot("Paul McDonald's", "04-10-80", "67 Blessington St", 132345, 5);
 
@@ -64,11 +66,11 @@ public class CCTAir {
          * linked a Pilot to each AirPlane, consequently links a pilot to a
          * flight
          */
-        a1.assingPilot(p4);
-        a2.assingPilot(p3);
-        a3.assingPilot(p2);
-        a4.assingPilot(p1);
-        a5.assingPilot(p5);
+        a1.assignPilot(p4);
+        a2.assignPilot(p3);
+        a3.assignPilot(p2);
+        a4.assignPilot(p1);
+        a5.assignPilot(p5);
 
         /**
          * Using the method to set the arrival Time and Departure Time
