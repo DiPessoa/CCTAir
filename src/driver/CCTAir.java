@@ -38,15 +38,15 @@ public class CCTAir {
         /**
          * Creating new instances of object AirPlane
          */
-        AirPlane a1 = new AirPlane("Embraer", "E-195", "A", 25);
+        Airplane a1 = new Airplane("Embraer", "E-195", "A", 25);
 
-        AirPlane a2 = new AirPlane("Boeing", "747-100", "B", 150);
+        Airplane a2 = new Airplane("Boeing", "747-100", "B", 150);
 
-        AirPlane a3 = new AirPlane("Airbus", "A320", "C", 365);
+        Airplane a3 = new Airplane("Airbus", "A320", "C", 365);
 
-        AirPlane a4 = new AirPlane("Boeing", "747-300", "D", 420);
+        Airplane a4 = new Airplane("Boeing", "747-300", "D", 420);
 
-        AirPlane a5 = new AirPlane("Airbus", "Beluga-Cargo", "E", 8);
+        Airplane a5 = new Airplane("Airbus", "Beluga-Cargo", "E", 8);
 
         /**
          * Creating new instance of object Flight

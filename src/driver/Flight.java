@@ -13,7 +13,7 @@ public class Flight {
     private String departureTime;
     private String arrivalTime;
     private String dateFlight;
-    private AirPlane airplane;
+    private Airplane airplane;
 
     /**
      * Constructor Method
@@ -26,7 +26,7 @@ public class Flight {
      * @param airplane Airplane - Assigned airplane to an airplane
      */
     public Flight(String origin, String destination, String departureTime,
-            String arrivalTime, String dateFlight, AirPlane airplane) {
+            String arrivalTime, String dateFlight, Airplane airplane) {
 
         this.origin = origin;
         this.destination = destination;
@@ -86,7 +86,7 @@ public class Flight {
      *
      * @return String Aircraft
      */
-    public AirPlane getAircraft() {
+    public Airplane getAirplane() {
         return airplane;
     }
 
@@ -131,7 +131,7 @@ public class Flight {
      *
      * @param airplane String
      */
-    public void setAircraft(AirPlane airplane) {
+    public void setAirplane(Airplane airplane) {
         this.airplane = airplane;
     }
 
