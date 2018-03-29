@@ -10,6 +10,8 @@
  */
 package driver;
 
+import java.util.Scanner;
+
 /**
  * Main Class
  *
@@ -18,7 +20,7 @@ package driver;
 public class CCTAir {
 
     /**
-     * Main method was created to hold all instances and call methods args
+     * Main method was created to hold all instances and call methods
      */
     public static void main(String[] args) {
 
@@ -72,23 +74,114 @@ public class CCTAir {
         a4.assignPilot(p1);
         a5.assignPilot(p5);
 
-        /**
-         * Using the method to set the arrival Time and Departure Time
-         */
-        f4.schedule("21:45", "11:24");
+        Scanner input = new Scanner(System.in);
 
-        /**
-         * Using the method to set the arrival Time
-         */
-        f4.schedule("23:56");
+        System.out.println("Choose an option:");
+        System.out.println("Type in 1 for: ADD Flight");
+        System.out.println("Type in 2 for: Change the Departure and Arrival time of a Flight");
+        System.out.println("Type in 3 for: Change an Arrival time of a Flight");
+        System.out.println("Type in 4 for: Display all flights");
 
-        /**
-         * Display all Flights
-         */
-        System.out.println(f1.toString());
-        System.out.println(f2.toString());
-        System.out.println(f3.toString());
-        System.out.println(f4.toString());
-        System.out.println(f5.toString());
+        Flight flight = new Flight();
+        int cases = input.nextInt();
+
+        switch (cases) {
+
+            case 1:
+                System.out.println("Type in the Flight's Origin:");
+                String origin = input.nextLine();
+                System.out.println("Type in the Flight's Destination:");
+                String destination = input.nextLine();
+                System.out.println("Type in the Flight's Departure Time:");
+                String departureTime = input.nextLine();
+                System.out.println("Type in the Flight's Arrival Time:");
+                String arrivalTime = input.nextLine();
+                System.out.println("Type in the Flight's Date:");
+                String dateFlight = input.nextLine();
+
+                System.out.println("Choose the airplane:");
+                System.out.println("Type in 1 for: Embraer E-195");
+                System.out.println("Type in 2 for: Boeing 747-100");
+                System.out.println("Type in 3 for: Airbus A320");
+                System.out.println("Type in 4 for: Boeing 747-300");
+                System.out.println("Type in 5 for: Airbus Beluga - Cargo");
+
+                int aircraft = input.nextInt();
+
+                switch (aircraft) {
+                    case 1:
+                        Flight f7 = new Flight(origin, destination, departureTime,
+                                arrivalTime, dateFlight, a1);
+                        flight = f7;
+                        break;
+                    case 2:
+                        Flight f8 = new Flight(origin, destination, departureTime,
+                                arrivalTime, dateFlight, a2);
+                        flight = f8;
+                        break;
+                    case 3:
+                        Flight f9 = new Flight(origin, destination, departureTime,
+                                arrivalTime, dateFlight, a3);
+                        flight = f9;
+                        break;
+                    case 4:
+                        Flight f10 = new Flight(origin, destination, departureTime,
+                                arrivalTime, dateFlight, a4);
+                        flight = f10;
+                        break;
+                    case 5:
+                        Flight f11 = new Flight(origin, destination, departureTime,
+                                arrivalTime, dateFlight, a5);
+                        flight = f11;
+                        break;
+                }
+
+//        if (aircraft == 1) {
+//            Flight f7 = new Flight(origin, destination, departureTime, arrivalTime, dateFlight, a1);
+//            f6 = f7;
+//        } else if (aircraft == 2) {
+//            Flight f7 = new Flight(origin, destination, departureTime, arrivalTime, dateFlight, a2);
+//            f6 = f7;
+//        } else if (aircraft == 3) {
+//            Flight f7 = new Flight(origin, destination, departureTime, arrivalTime, dateFlight, a3);
+//            f6 = f7;
+//        } else if (aircraft == 4) {
+//            Flight f7 = new Flight(origin, destination, departureTime, arrivalTime, dateFlight, a4);
+//            f6 = f7;
+//        } else if (aircraft == 5) {
+//            Flight f7 = new Flight(origin, destination, departureTime, arrivalTime, dateFlight, a5);
+//            f6 = f7;
+//        }else{
+//            Flight f7= new Flight();
+//            f6 = f7;
+//        }
+            case 2:
+                /**
+                 * Using the method to set the arrival Time and Departure Time
+                 */
+                f4.schedule("21:45", "11:24");
+                break;
+
+            case 3:
+                /**
+                 * Using the method to set the arrival Time
+                 */
+                f4.schedule("23:56");
+                break;
+
+            case 4:
+                /**
+                 * Display all Flights
+                 */
+                System.out.println(f1.toString());
+                System.out.println(f2.toString());
+                System.out.println(f3.toString());
+                System.out.println(f4.toString());
+                System.out.println(f5.toString());
+                if(flight.getDestination().isEmpty() == false){
+                    System.out.println(f5.toString());
+
+                }// dando erro de exceção
+        }
     }
 }

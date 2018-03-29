@@ -36,6 +36,10 @@ public class Flight {
         this.airplane = airplane;
     }
 
+    public Flight() {
+
+    }
+
     /**
      * Method returns Flight's origin
      *
