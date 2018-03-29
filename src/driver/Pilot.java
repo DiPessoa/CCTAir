@@ -9,7 +9,7 @@ package driver;
  */
 public class Pilot extends Employee {
 
-    int rating;
+    private int rating;
 
     /**
      * Constructor Method
