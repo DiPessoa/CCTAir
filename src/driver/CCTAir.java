@@ -18,7 +18,7 @@ package driver;
 public class CCTAir {
 
     /**
-     * Main method was created to hold all instances and call methods args
+     * Main method was created to hold all instances and call methods
      */
     public static void main(String[] args) {
 
