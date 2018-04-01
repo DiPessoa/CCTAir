@@ -8,7 +8,7 @@ package driver;
  * @author Luana Andrade
  *
  */
-public class AirPlane {
+public class Airplane {
 
     private final String make; // final because we can't change after the isntance was created
     private final String model;
@@ -24,7 +24,7 @@ public class AirPlane {
      * @param category String - Says what kind of airplane is
      * @param capacity Integer - Number of seats
      */
-    public AirPlane(String make, String model, String category, int capacity) {
+    public Airplane(String make, String model, String category, int capacity) {
         this.make = make;
         this.model = model;
         this.category = category;
@@ -32,7 +32,7 @@ public class AirPlane {
     }
 
     /**
-     * Method returns AirPlane's make
+     * Method returns Airplane's make
      *
      * @return String make
      */
@@ -41,7 +41,7 @@ public class AirPlane {
     }
 
     /**
-     * Method returns AirPlane's model
+     * Method returns Airplane's model
      *
      * @return String model
      */
@@ -50,7 +50,7 @@ public class AirPlane {
     }
 
     /**
-     * Method returns AirPlane's seats
+     * Method returns Airplane's seats
      *
      * @return Integer capacity
      */

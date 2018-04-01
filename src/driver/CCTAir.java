@@ -40,15 +40,15 @@ public class CCTAir {
         /**
          * Creating new instances of object AirPlane
          */
-        AirPlane a1 = new AirPlane("Embraer", "E-195", "A", 25);
+        Airplane a1 = new Airplane("Embraer", "E-195", "A", 25);
 
-        AirPlane a2 = new AirPlane("Boeing", "747-100", "B", 150);
+        Airplane a2 = new Airplane("Boeing", "747-100", "B", 150);
 
-        AirPlane a3 = new AirPlane("Airbus", "A320", "C", 365);
+        Airplane a3 = new Airplane("Airbus", "A320", "C", 365);
 
-        AirPlane a4 = new AirPlane("Boeing", "747-300", "D", 420);
+        Airplane a4 = new Airplane("Boeing", "747-300", "D", 420);
 
-        AirPlane a5 = new AirPlane("Airbus", "Beluga-Cargo", "E", 8);
+        Airplane a5 = new Airplane("Airbus", "Beluga-Cargo", "E", 8);
 
         /**
          * Creating new instance of object Flight
@@ -82,9 +82,11 @@ public class CCTAir {
         System.out.println("Type in 3 for: Change an Arrival time of a Flight");
         System.out.println("Type in 4 for: Display all flights");
 
-        Flight flight = new Flight();
+        Flight f6 = new Flight();
         int cases = input.nextInt();
-
+        
+        
+        
         switch (cases) {
 
             case 1:
@@ -106,55 +108,55 @@ public class CCTAir {
                 System.out.println("Type in 4 for: Boeing 747-300");
                 System.out.println("Type in 5 for: Airbus Beluga - Cargo");
 
-                int aircraft = input.nextInt();
+             int aircraft = input.nextInt();
+//
+//                switch (aircraft) {
+//                    case 1:
+//                        Flight f7 = new Flight(origin, destination, departureTime,
+//                                arrivalTime, dateFlight, a1);
+//                        flight = f7;
+//                        break;
+//                    case 2:
+//                        Flight f8 = new Flight(origin, destination, departureTime,
+//                                arrivalTime, dateFlight, a2);
+//                        flight = f8;
+//                        break;
+//                    case 3:
+//                        Flight f9 = new Flight(origin, destination, departureTime,
+//                                arrivalTime, dateFlight, a3);
+//                        flight = f9;
+//                        break;
+//                    case 4:
+//                        Flight f10 = new Flight(origin, destination, departureTime,
+//                                arrivalTime, dateFlight, a4);
+//                        flight = f10;
+//                        break;
+//                    case 5:
+//                        Flight f11 = new Flight(origin, destination, departureTime,
+//                                arrivalTime, dateFlight, a5);
+//                        flight = f11;
+//                        break;
+//                }
 
-                switch (aircraft) {
-                    case 1:
-                        Flight f7 = new Flight(origin, destination, departureTime,
-                                arrivalTime, dateFlight, a1);
-                        flight = f7;
-                        break;
-                    case 2:
-                        Flight f8 = new Flight(origin, destination, departureTime,
-                                arrivalTime, dateFlight, a2);
-                        flight = f8;
-                        break;
-                    case 3:
-                        Flight f9 = new Flight(origin, destination, departureTime,
-                                arrivalTime, dateFlight, a3);
-                        flight = f9;
-                        break;
-                    case 4:
-                        Flight f10 = new Flight(origin, destination, departureTime,
-                                arrivalTime, dateFlight, a4);
-                        flight = f10;
-                        break;
-                    case 5:
-                        Flight f11 = new Flight(origin, destination, departureTime,
-                                arrivalTime, dateFlight, a5);
-                        flight = f11;
-                        break;
-                }
-
-//        if (aircraft == 1) {
-//            Flight f7 = new Flight(origin, destination, departureTime, arrivalTime, dateFlight, a1);
-//            f6 = f7;
-//        } else if (aircraft == 2) {
-//            Flight f7 = new Flight(origin, destination, departureTime, arrivalTime, dateFlight, a2);
-//            f6 = f7;
-//        } else if (aircraft == 3) {
-//            Flight f7 = new Flight(origin, destination, departureTime, arrivalTime, dateFlight, a3);
-//            f6 = f7;
-//        } else if (aircraft == 4) {
-//            Flight f7 = new Flight(origin, destination, departureTime, arrivalTime, dateFlight, a4);
-//            f6 = f7;
-//        } else if (aircraft == 5) {
-//            Flight f7 = new Flight(origin, destination, departureTime, arrivalTime, dateFlight, a5);
-//            f6 = f7;
-//        }else{
-//            Flight f7= new Flight();
-//            f6 = f7;
-//        }
+        if (aircraft == 1) {
+            Flight f7 = new Flight(origin, destination, departureTime, arrivalTime, dateFlight, a1);
+            f6 = f7;
+        } else if (aircraft == 2) {
+            Flight f7 = new Flight(origin, destination, departureTime, arrivalTime, dateFlight, a2);
+            f6 = f7;
+        } else if (aircraft == 3) {
+            Flight f7 = new Flight(origin, destination, departureTime, arrivalTime, dateFlight, a3);
+            f6 = f7;
+        } else if (aircraft == 4) {
+            Flight f7 = new Flight(origin, destination, departureTime, arrivalTime, dateFlight, a4);
+            f6 = f7;
+        } else if (aircraft == 5) {
+            Flight f7 = new Flight(origin, destination, departureTime, arrivalTime, dateFlight, a5);
+            f6 = f7;
+        }else{
+            Flight f7= new Flight();
+            f6 = f7;
+        }
             case 2:
                 /**
                  * Using the method to set the arrival Time and Departure Time
@@ -178,10 +180,8 @@ public class CCTAir {
                 System.out.println(f3.toString());
                 System.out.println(f4.toString());
                 System.out.println(f5.toString());
-                if(flight.getDestination().isEmpty() == false){
-                    System.out.println(f5.toString());
-
-                }// dando erro de exceção
+                System.out.println(f6.toString());
+//                
         }
     }
 }
