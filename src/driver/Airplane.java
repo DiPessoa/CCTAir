@@ -1,8 +1,8 @@
 package driver;
 
 /**
- * Class of an Airplane object where is possible find all variables and
- * methods about airplane
+ * Class of an airplane object where is possible find all variables and methods
+ * about airplane
  *
  * @author Diogo Pessoa
  * @author Luana Andrade

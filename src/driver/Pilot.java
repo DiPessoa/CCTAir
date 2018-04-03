@@ -14,11 +14,11 @@ public class Pilot extends Employee {
     /**
      * Constructor Method
      *
-     * @param name - String - Pilot's name
-     * @param dob - String - Pilot's dob
-     * @param address - String - Pilot's address
-     * @param pps - Integer - Pilot's pps
-     * @param rating - Integer - Tells about what kind of airplane the assigned
+     * @param name String - Pilot's name
+     * @param dob String - Pilot's dob
+     * @param address String - Pilot's address
+     * @param pps Integer - Pilot's pps
+     * @param rating Integer - Tells about what kind of airplane that assigned
      * pilot is allowed to fly
      *
      */

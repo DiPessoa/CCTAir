@@ -5,6 +5,7 @@ package driver;
  * methods about flight.
  *
  * @author Luana Andrade
+ * @author Diogo Pessoa
  */
 public class Flight {
 

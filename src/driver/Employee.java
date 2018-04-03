@@ -17,10 +17,10 @@ abstract class Employee {
     /**
      * Constructor Method
      *
-     * @param name - String - Employee's name
-     * @param dob - String - Employee's dob
-     * @param address - String - Employee's address
-     * @param pps - Integer - Employee's pps
+     * @param name String - Employee's name
+     * @param dob String - Employee's dob
+     * @param address String - Employee's address
+     * @param pps Integer - Employee's pps
      *
      */
     public Employee(String name, String dob, String address, int pps) {
@@ -44,7 +44,6 @@ abstract class Employee {
      *
      * @return String dob
      */
-
     public String getDob() {
         return dob;
     }

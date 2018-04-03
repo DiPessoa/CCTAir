@@ -6,7 +6,7 @@
 /**
  * @author Diogo Pessoa 2016326
  * @author Luana Andrade 2016270
- * @author Luzilene OLiveira 2016299
+ * @author Luzilene Oliveira 2016299
  */
 package driver;
 
@@ -83,7 +83,7 @@ public class CCTAir {
         f4.schedule("23:56");
 
         /**
-         * Display all Flights
+         * Displays all Flights
          */
         System.out.println(f1.toString());
         System.out.println(f2.toString());
