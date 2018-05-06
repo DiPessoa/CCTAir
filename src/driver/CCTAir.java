@@ -84,8 +84,8 @@ public class CCTAir {
 
         Flight f6 = new Flight();
         int cases = input.nextInt();
-        
-        
+       
+                
         
         switch (cases) {
 
@@ -157,6 +157,8 @@ public class CCTAir {
             Flight f7= new Flight();
             f6 = f7;
         }
+        
+        System.out.println(f6.toString());
             case 2:
                 /**
                  * Using the method to set the arrival Time and Departure Time
